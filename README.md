@@ -5,12 +5,6 @@ Yocto layer for the L.IoT platform.
 The layer contains all the tools to connect your Yocto device to the L.IoT
 platform.
 
-## Dependencies
-
-- URI: https://git.openembedded.org/openembedded-core
-  - branch: scarthgap
-  - revision: HEAD
-
 ## Branches
 
 | Branch          | Yocto Release |
