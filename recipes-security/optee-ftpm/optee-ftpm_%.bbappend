@@ -1,0 +1,6 @@
+COMPATIBLE_MACHINE:phyboard-pollux-imx8mp-3 = "phyboard-pollux-imx8mp-3"
+COMPATIBLE_MACHINE:phyboard-segin-imx93-2 = "phyboard-segin-imx93-2"
+COMPATIBLE_MACHINE:phyboard-nash-imx93-1  = "phyboard-nash-imx93-1"
+COMPATIBLE_MACHINE:phyboard-polis-imx8mm-5 = "phyboard-polis-imx8mm-5"
+COMPATIBLE_MACHINE:phygate-tauri-l-imx8mm-2 = "phygate-tauri-l-imx8mm-2"
+COMPATIBLE_MACHINE:am62lxx-phyflex-libra-rdk-1  = "am62lxx-phyflex-libra-rdk-1"
