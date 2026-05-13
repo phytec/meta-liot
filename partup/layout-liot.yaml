@@ -68,3 +68,5 @@ partitions:
     type: logical
     filesystem: ext4
     expand: true
+    input:
+      - filename: phyhub-liot-device-seeding.tar.gz
