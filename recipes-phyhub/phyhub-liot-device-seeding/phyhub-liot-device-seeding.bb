@@ -6,7 +6,7 @@ SRC_URI = " \
     git://git@github.com/ML-PA-Consulting-GmbH/phyhub-liot-device-seeding.git;branch=main;protocol=ssh \
 "
 
-SRCREV = "467495cbc7552c17b094f10371bd3112ef0662d7"
+SRCREV = "3ec9a7daeceb6893ff31516abbe8dd9be89bdd5e"
 
 inherit deploy
 S = "${WORKDIR}"
