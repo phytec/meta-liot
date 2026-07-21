@@ -8,7 +8,7 @@ HOMEPAGE = "https://github.com/ML-PA-Consulting-GmbH/phyhub-liot-device-provisio
 LICENSE = "CLOSED"
 
 SRC_URI = "git://git@github.com/ML-PA-Consulting-GmbH/${BPN}.git;branch=main;protocol=ssh"
-SRCREV = "9a4b579bc52a1d85cf59fdf4c7b3e1bf95274bfe"
+SRCREV = "675e4afa6f999820f55574422da0c2c0c0f48348"
 
 GO_IMPORT = "${BPN}"
 GO_EXTRA_LDFLAGS = "-X main.version=${PV}"
