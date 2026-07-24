@@ -1,1 +1,4 @@
-RDEPENDS:${PN}:remove = "rauc-downgrade-barrier"
+RDEPENDS:${PN}:remove = "\
+    rauc-downgrade-barrier \
+    rauc-hawkbit-updater \
+"
