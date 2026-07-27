@@ -5,6 +5,7 @@ PARTUP_LAYOUT_CONFIG:update = "layout-liot.yaml"
 IMAGE_INSTALL:append = " \
     packagegroup-snapd \
     phyhub-liot-device-provisioning \
+    phyhub-liot-device-seeding-link \
 "
 
 PARTUP_PACKAGE_FILES:append = " phyhub-liot-device-seeding.tar.gz"
