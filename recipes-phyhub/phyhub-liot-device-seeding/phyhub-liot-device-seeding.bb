@@ -20,6 +20,12 @@ do_compile () {
         cp -r ${S}/git/${MACHINE}/seed/* ${C}/var/lib/snapd/seed
 }
 
+do_install () {
+        install -d "${D}"
+        ln -sf /var/lib/snapd/snap ${D}/snap
+}
+
+FILES:${PN}-link = "snap"
 
 do_deploy () {
         tar -czf ${B}/phyhub-liot-device-seeding.tar.gz -C ${C}/ . --owner=0 --group=0
