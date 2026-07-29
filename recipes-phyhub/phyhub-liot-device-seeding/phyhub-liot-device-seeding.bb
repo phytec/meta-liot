@@ -15,6 +15,8 @@ S = "${WORKDIR}"
 
 C = "${WORKDIR}/seed-part"
 
+do_compile[cleandirs] = "${C}"
+
 do_compile () {
         mkdir -p ${C}/var/lib/snapd/seed
         cp -r ${S}/git/${MACHINE}/seed/* ${C}/var/lib/snapd/seed
