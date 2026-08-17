@@ -10,3 +10,6 @@ IMAGE_INSTALL:append = " \
 
 PARTUP_PACKAGE_FILES:append = " phyhub-liot-device-seeding.tar.gz"
 PARTUP_PACKAGE_DEPENDS:append = " phyhub-liot-device-seeding"
+
+IMAGE_BASENAME = "${PN}-${MACHINE}"
+IMAGE_MACHINE_SUFFIX = ""
