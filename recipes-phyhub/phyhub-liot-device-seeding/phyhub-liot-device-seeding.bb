@@ -6,7 +6,7 @@ SRC_URI = " \
     git://git@github.com/ML-PA-Consulting-GmbH/phyhub-liot-device-seeding.git;branch=main;protocol=ssh \
 "
 
-SRCREV = "3ec9a7daeceb6893ff31516abbe8dd9be89bdd5e"
+SRCREV = "77097569bfb07ac70a9d3afee6e009d02eed87e2"
 
 PACKAGES += "${PN}-link"
 
@@ -19,7 +19,7 @@ do_compile[cleandirs] = "${C}"
 
 do_compile () {
         mkdir -p ${C}/var/lib/snapd/seed
-        cp -r ${S}/git/${MACHINE}/seed/* ${C}/var/lib/snapd/seed
+        cp -r ${S}/git/phyhub-production-environment/seeds/seed-${MACHINE}/seed/* ${C}/var/lib/snapd/seed
 }
 
 do_install () {
