@@ -7,7 +7,10 @@ HOMEPAGE = "https://github.com/ML-PA-Consulting-GmbH/phyhub-liot-device-provisio
 
 LICENSE = "CLOSED"
 
-SRC_URI = "git://git@github.com/ML-PA-Consulting-GmbH/${BPN}.git;branch=main;protocol=ssh"
+SRC_URI = " \
+    git://git@github.com/ML-PA-Consulting-GmbH/${BPN}.git;branch=main;protocol=ssh \
+    file://${BPN}-${FLOW}.service \
+"
 SRCREV = "675e4afa6f999820f55574422da0c2c0c0f48348"
 
 GO_IMPORT = "${BPN}"
@@ -24,7 +27,7 @@ inherit go-mod systemd
 
 do_install:append (){
     install -d ${D}${systemd_system_unitdir}
-    install -m 0644 ${S}/src/${GO_IMPORT}/deploy/yocto/${BPN}-${FLOW}.service ${D}${systemd_system_unitdir}
+    install -m 0644 ${WORKDIR}/${BPN}-${FLOW}.service ${D}${systemd_system_unitdir}
 
     mv ${D}${bindir}/phyhub-liot-device-provisioning ${D}${bindir}/liot-provisioning
 }

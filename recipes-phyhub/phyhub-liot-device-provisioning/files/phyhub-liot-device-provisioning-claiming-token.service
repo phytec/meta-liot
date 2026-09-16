@@ -1,0 +1,18 @@
+[Unit]
+Description=L-IoT Device Provisioning (claiming-token)
+Documentation=https://github.com/l-iot/liot-provisioning
+After=network-online.target snapd.service
+Wants=network-online.target snapd.service
+Before=getty.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/liot-provisioning claiming-token
+StandardInput=null
+StandardOutput=journal+console
+StandardError=journal+console
+Restart=no
+User=root
+
+[Install]
+WantedBy=multi-user.target
