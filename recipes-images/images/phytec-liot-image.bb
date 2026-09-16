@@ -6,6 +6,7 @@ IMAGE_INSTALL:append = " \
     packagegroup-snapd \
     phyhub-liot-device-provisioning \
     phyhub-liot-device-seeding-link \
+    auditd \
 "
 
 PARTUP_PACKAGE_FILES:append = " phyhub-liot-device-seeding.tar.gz"
