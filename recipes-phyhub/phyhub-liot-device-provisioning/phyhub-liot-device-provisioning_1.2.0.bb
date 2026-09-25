@@ -9,7 +9,7 @@ LICENSE = "GPL-3.0-or-later"
 LIC_FILES_CHKSUM = "file://${WORKDIR}/git/src/${BPN}/LICENSE;md5=1ebbd3e34237af26da5dc08a4e440464"
 
 SRC_URI = " \
-    git://git@github.com/ML-PA-Consulting-GmbH/${BPN}.git;branch=main;protocol=ssh \
+    git://github.com/ML-PA-Consulting-GmbH/${BPN}.git;branch=main;protocol=https \
     file://${BPN}-${FLOW}.service \
 "
 SRCREV = "f34cd4c015c852b77e6db9fb12b83113077869d0"
