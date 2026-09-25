@@ -11,7 +11,7 @@ SRC_URI = " \
     git://git@github.com/ML-PA-Consulting-GmbH/${BPN}.git;branch=main;protocol=ssh \
     file://${BPN}-${FLOW}.service \
 "
-SRCREV = "675e4afa6f999820f55574422da0c2c0c0f48348"
+SRCREV = "f34cd4c015c852b77e6db9fb12b83113077869d0"
 
 GO_IMPORT = "${BPN}"
 GO_EXTRA_LDFLAGS = "-X main.version=${PV}"
