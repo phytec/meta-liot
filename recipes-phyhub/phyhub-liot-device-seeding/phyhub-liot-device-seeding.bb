@@ -37,3 +37,5 @@ do_deploy () {
 }
 
 addtask deploy after do_compile
+
+PACKAGE_ARCH = "${MACHINE_ARCH}"
