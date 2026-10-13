@@ -8,7 +8,7 @@ SRC_URI = " \
     git://github.com/ML-PA-Consulting-GmbH/phyhub-liot-device-seeding.git;branch=main;protocol=https \
 "
 
-SRCREV = "bf9a307446203b151a1155a096d513a047ee2d6f"
+SRCREV = "f6a8d42ea0c253cd06b866efcee7a0b15dbbb874"
 
 PACKAGES += "${PN}-link"
 
